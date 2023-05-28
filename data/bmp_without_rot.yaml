@@ -1,0 +1,20 @@
+# Example usage: python train.py --data das.yaml
+# parent
+# ├── yolov5
+#     └── data
+#         └── datasets
+#             └── bmp  ← here
+
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: C:\Users\Emmmer\git\yolov5\data\datasets\bmp_without_rot  # dataset root dir
+train: C:\Users\Emmmer\git\yolov5\data\datasets\bmp_without_rot\train  # train images (relative to 'path')
+val: C:\Users\Emmmer\git\yolov5\data\datasets\bmp_without_rot\val  # val images (relative to 'path')
+test: C:\Users\Emmmer\git\yolov5\data\datasets\bmp_without_rot\test # test images (optional)
+
+# Classes
+names:
+  0: 17mm
+  1: 80mm
+  2: 200mm
+
